@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  
+  <title>Friend Finder - Survey</title>
+</head>
+<body>
+  <div class="container">
+    <h2>Survey Questions</h2>
+    <hr>
+    <form id="form">
+      <h4>About you</h4>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input name="name" type="text" class="form-control" id="name" placeholder="Enter name" required>
+      </div>
+      <div class="form-group">
+        <label for="photo">Link to Photo</label>
+        <input name="photo" type="text" class="form-control" id="photo" required>
+      </div>
+
+      <div class="form-group">
+        <h4>Question 1</h4>
+        <label for="q1">Your mind is always buzzing with unexplored ideas and plans.</label>
+        <select name="q1" class="form-control" id="q1">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 2</h4>
+        <label for="q2">Generally speaking, you rely more on your experience than your imagination.</label>
+        <select name="q2" class="form-control" id="q2">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 3</h4>
+        <label for="q3">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+        <select name="q3" class="form-control" id="q3">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 4</h4>
+        <label for="q4">You rarely do something just out of sheer curiosity.</label>
+        <select name="q4" class="form-control" id="q4">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 5</h4>
+        <label for="q5">People can rarely upset you.</label>
+        <select name="q5" class="form-control" id="q5">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 6</h4>
+        <label for="q6">It is often difficult for you to relate to other people’s feelings.</label>
+        <select name="q6" class="form-control" id="q6">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 7</h4>
+        <label for="q7">In a discussion, truth should be more important than people’s sensitivities.</label>
+        <select name="q7" class="form-control" id="q7">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 8</h4>
+        <label for="q8">You rarely get carried away by fantasies and ideas.</label>
+        <select name="q8" class="form-control" id="q8">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 9</h4>
+        <label for="q9">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</label>
+        <select name="q9" class="form-control" id="q9">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <h4>Question 10</h4>
+        <label for="q10">You feel more energetic after spending time with a group of people.</label>
+        <select name="q10" class="form-control" id="q10">
+          <option>1 (Strongly Disagree)</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 (Strongly Agree)</option>
+        </select>
+      </div>
+
+      <hr>
+
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </form>
+    
+    <hr>
+    <footer class="footer">
+      <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/kevnfu/friend-finder">GitHub Repo</a></p>
+    </footer>
+
+  </div>
+
+  
+  <!-- Modal -->
+  <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h2 id="match-name"></h2>
+          <img id="match-img" src="" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <script
+    src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script src="survey.js" type="text/javascript"></script>
+</body>
+</html>
